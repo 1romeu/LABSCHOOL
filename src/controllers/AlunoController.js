@@ -25,9 +25,6 @@ module.exports = {
         }else{
             response.status(200).json(json)
         }
-
-        response.header("Access-Control-Allow-Origin", "*")
-        response.status(200).json(json)
     },
     readyAlunosByCurso: async (request, response) => {
         let json = {error:"", result: []}
